@@ -1,0 +1,19 @@
+config BR2_PACKAGE_MOONLIGHT_EMBEDDED
+	bool "moonlight-embedded"
+	depends on BR2_PACKAGE_HAS_UDEV
+	depends on BR2_PACKAGE_UTIL_LINUX_LIBUUID
+	depends on BR2_PACKAGE_LIBEVDEV
+	depends on BR2_PACKAGE_AVAHI_LIBAVAHI_CLIENT
+	select BR2_PACKAGE_LIBCURL
+	select BR2_PACKAGE_ALSA_LIB
+	select BR2_PACKAGE_OPUS
+	select BR2_PACKAGE_EXPAT
+	select BR2_PACKAGE_OPENSSL
+	select BR2_PACKAGE_LIBUDVA
+	select BR2_PACKAGE_LIBVA
+	select BR2_PACKAGE_LIBCEC
+	select BR2_PACKAGE_FFMPEG
+	help
+	  Moonlight Embedded is an open source implementation of NVIDIA
+
+	  https://github.com/moonlight-embedded-stream/moonlight-embedded-embedded
